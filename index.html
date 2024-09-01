@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js" defer></script>
+    <title>Verificador de Usuários</title>
+</head>
+
+<body>
+    <header>
+        <h1>gui empresa</h1>
+    </header>
+
+    <section class="container">
+        <h2 class="titulo">Adicionar e Remover Usuários</h2>
+
+        <div class="form-usuarios">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="funcao">Função:</label>
+            <input type="text" name="funcao" id="funcao">
+
+            <div class="botoes">
+                <button class="btn-adicionar" onclick="adicionar()">Adicionar</button>
+                <button class="btn-remover" onclick="remover()">Remover</button>
+            </div>
+        </div>
+
+        <div class="mostrar-usuarios">
+            <h2>Mostrar Usuários</h2>
+            <p id="numero-usuarios">Número de usuários: 0</p>
+            <div class="pesquisar-nome">
+                <input placeholder="Pesquise um nome" type="search" name="q" id="pesquisar">
+                <button onclick="pesquisar()">Pesquisar</button>
+            </div>
+            <select name="usuarios" id="usuarios" size="7"></select>
+            <p id="usuario-pesquisado"></p>
+        </div>
+    </section>
+</body>
+
+</html>
